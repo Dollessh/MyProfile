@@ -1,48 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Login Form
-        </title>
-        <style>
-            body{
-                border:2px solid red;
-                height: 100vh;
-                width: 100vw;
-                background-image: url('htmlFormBackgroundImage.jpg');
-                background-size: contain;
-            }
-            .imgcontainer{
-                height: 200px;
-                text-align: center;
 
-                width: 200px;
-                border: 1px solid red;
-            }
+<head>
+    <title>
+        Login Form
+    </title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('bgImg.jpg');
+            border: 2px solid black;
+            background-attachment: fixed;
+            background-size: cover;
+        }
 
-            .image{
-                height: 175px;
-                width: 175px;
-                border-radius: 50%;
-                text-align: center;
-            }
+        form{
+            
+        }
 
-           
-            .textcenter{
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <h2 class="textcenter">Login Page</h2>
-        <form class="textcenter">
-            <div class="imgcontainer" >
-                <img src="loginIcon.jpg" class="image">
+        .formcontainer {
+            border: 2px solid rebeccapurple;
+            height: 70vh;
+            width: 80vw;
+            margin: 200px;
+            margin-top: 100px;
+
+        }
+
+        .inputType{
+            width: 70%;
+            height: auto;
+            padding: 12px 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .Label{
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+
+        .btnL{
+            width: 70%;
+            height: 50px;
+            padding: auto; 
+            margin: 10px;
+            
+            background-color: rgb(59, 75, 59);
+        }
+        
+
+        .btn{
+            width: 35%;
+            display: inline-block;
+            padding: auto;
+            margin-left: 5px;
+            height: 50px;
+            background-color: rgb(209, 93, 93);
+            
+        }
+
+        .textcenter {
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 2.0rem;
+        }
+
+        .heading span {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .imgContainer {
+            height: 200px;
+            width: 200px;
+        }
+
+        .img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="formcontainer">
+            <div class="header textcenter">
+                <h2 class="textcenter heading">
+                    <span>Login Page</span>
+                </h2>
+    
+                <span class="imgContainer">
+                    <img src="loginIcon.jpg" class="img">
+    
+                </span>
             </div>
-            <div>
-                <label>USername</label><br>
-                <input type="text" placeholder="Enter Username">
-            </div>
-        </form>
-    </body>
+
+            <form class="">
+                <label class="Label"><strong>Username</strong></label><br>
+                <input type="text" placeholder="Enter USername" name="Uname" required class="inputType">
+                <br>
+
+                <label class="Label"><strong>Password</strong></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required class="inputType">
+                <br>
+
+                <button class="btnL"><strong>Login</strong></button>
+                <br>
+                <button class="btn"><strong>Sign Up</strong></button>
+
+                
+                <button class="btn"><strong>forget password?    </strong></button>
+
+
+            </form>
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+</body>
+
 </html>
