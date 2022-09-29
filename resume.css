@@ -2,4 +2,102 @@ body{
     margin: 0px;
 }
 
-#
+/*Body header*/
+#body-header{
+    background-image: url(minimal.jpg);
+    height: 75vh;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Horizontal list */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 15px 15px 0px;
+    margin-top: 15px;
+    
+}
+
+.horizontal-list li a{
+    color: rgb(229, 203, 99);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif  ;
+    
+
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: rgb(177, 173, 173);;
+    border-bottom: 2px solid grey;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+/* Name and Social Container */
+#name-social-container{
+    margin-top: 10vh;
+}
+
+#my-name {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    color: rgb(229, 203, 99);;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+#my-name:hover{
+    color: rgb(177, 173, 173);;
+    
+}
+
+.social-icon li a i{
+    padding: 10px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+}
+
+.social-icon li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgb(177, 173, 173);
+}
+
+
+/* About Section */
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 20rem;
+    width: 17rem;
+    margin: auto;
+    margin-top: -22vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+
+}
+#my-image img:hover{
+    box-shadow: 0px 0px 6px 4px rgb(177, 173, 173);    
+
+}
+
